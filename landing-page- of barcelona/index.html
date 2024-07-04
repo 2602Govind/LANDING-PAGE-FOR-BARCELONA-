@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Barcelona Landing Page</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <style>
+    body {
+      font-family: 'Roboto Condensed', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    header.showPage {
+      background: url('images/barcelona.jpg') no-repeat center center/cover;
+      color: rgb(59, 29, 29);
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    header.showPage h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header.showPage p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    .btn-1 {
+      background-color: #ff6f61;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-1:hover {
+      background-color: #ff3f3f;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 10px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 0 15px;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff6f61;
+    }
+
+    section {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+      background-color: #ff6f61;
+    }
+
+    section p {
+      font-size: 1rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: 0 auto 20px;
+    }
+
+    .flex-columns {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+    }
+
+    .flex-columns p {
+      width: 30%;
+      text-align: left;
+      margin: 20px 0;
+    }
+
+    .image-gallery {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+      max-width: 1200px;
+      margin: 20px auto;
+    }
+
+    .image-gallery img {
+      max-width: 100%;
+      height: auto;
+      max-height: 250px;
+      width: auto;
+      transition: transform 0.5s ease;
+    }
+
+    .image-gallery:hover img {
+      transform: scale(1.05);
+    }
+
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    .social-links a {
+      color: rgb(86, 1, 1);
+      margin: 0 10px;
+      font-size: 1.5rem;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: #ff6f61;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    header.showPage, section, footer {
+      animation: fadeIn 1s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="showPage">
+    <h1>Barcelona Landing Page</h1>
+    <p>All about this beautiful city</p>
+    <button type="button" class="btn-1">Read About</button>
+  </header>
+
+  <nav>
+    <a href="#section-1">About Barcelona</a>
+    <a href="#section-2">Cool Stories</a>
+    <a href="#section-3">Gallery</a>
+  </nav>
+
+  <section id="section-1">
+    <h1>About Barcelona</h1>
+    <p>Barcelona, the cosmopolitan capital of Spain's Catalonia region, is known for its art, architecture, and vibrant culture. Nestled between the Mediterranean Sea and the Serra de Collserola hills, this city offers a unique blend of historic charm and modern sophistication.</p>
+    <p>The city's architectural landscape is a testament to its rich history and avant-garde spirit. Antoni Gaudí's masterpieces, such as the Sagrada Família, Park Güell, and Casa Batlló, stand as icons of Catalan Modernism. Gaudí's imaginative designs, characterized by organic shapes, vibrant colors, and intricate details, have become synonymous with Barcelona’s identity. The Gothic Quarter, with its narrow medieval streets, ancient buildings, and the stunning Barcelona Cathedral, provides a stark contrast to Gaudí’s modernist works, reflecting the city’s diverse architectural heritage.</p>
+    <p>Barcelona is also renowned for its cultural scene. The city is home to numerous museums, galleries, and theaters, including the Picasso Museum, which houses an extensive collection of the artist's works. The city's vibrant arts scene is complemented by its dynamic festivals, such as La Mercè and Sant Jordi, which celebrate Catalan culture with parades, music, and traditional dances.</p>
+    <p>The Mediterranean influence is evident in Barcelona’s lifestyle and cuisine. The city’s beaches, such as Barceloneta and Bogatell, are popular spots for locals and tourists alike to relax and enjoy the sun. Barcelona’s culinary scene is a fusion of traditional Catalan dishes and contemporary gastronomy. Tapas bars, seafood restaurants, and bustling markets like La Boqueria offer a taste of the city’s rich culinary heritage.</p>
+    <p>Barcelona's commitment to innovation and sustainability is also noteworthy. The city has embraced smart city technologies to improve urban living and is known for its extensive public transportation network, pedestrian-friendly streets, and green spaces like Parc de la Ciutadella.</p>
+    <p>Overall, Barcelona is a city that seamlessly blends tradition and modernity, offering a rich tapestry of experiences for visitors and residents alike. Its architectural wonders, cultural vibrancy, and Mediterranean charm make it a truly unique and captivating destination.</p>
+  </section>
+
+  <section id="section-2">
+    <h1>Some Cool Stories</h1>
+    <div class="flex-columns">
+      <p>The Legend of Sant Jordi
+        Sant Jordi, or Saint George, is the patron saint of Catalonia, and his legend is deeply woven into Barcelona's culture. According to the tale, Sant Jordi saved a princess from a dragon by slaying it with his sword. From the dragon’s blood sprouted a rosebush, and Sant Jordi gave the princess a rose. This story is celebrated every year on April 23rd, known as La Diada de Sant Jordi, where the city transforms into a sea of books and roses. Men traditionally give roses to women, and women give books to men, making it a romantic and literary celebration.</p>
+      <p>The Mysterious Disappearance of the Cathedral's Builder
+        The construction of the Barcelona Cathedral, also known as the Cathedral of the Holy Cross and Saint Eulalia, is shrouded in mystery. Legend has it that the architect responsible for the cathedral's magnificent façade disappeared under mysterious circumstances before it was completed. Some say he made a deal with the devil to ensure the cathedral's grandeur and vanished once his part of the bargain was fulfilled. The cathedral remains a stunning example of Gothic architecture, with its intricate details and impressive towers.</p>
+      <p>The Enigmatic Casa Milà (La Pedrera)
+        Antoni Gaudí’s Casa Milà, commonly known as La Pedrera, has its own share of stories. One of the most intriguing involves its unique chimney stacks. The chimneys are said to have inspired George Lucas's design for the stormtrooper helmets in "Star Wars." Whether or not this is true, La Pedrera's undulating façade and whimsical structures continue to captivate visitors and locals alike.</p>
+    </div>
+  </section>
+
+  <section id="section-3" class="image-gallery">
+    <img src="depositphotos_88938870-stock-illustration-flag-football-club-barcelona-spain.jpg" alt="Barcelona Image 1">
+    <img src="images/download.jpeg" alt="Barcelona Image 2">
+    <img src="istockphoto-1418575808-612x612.jpg" alt="Barcelona Image 3">
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Barcelona Landing Page. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </footer>
+
+</body>
+</html>
+   
